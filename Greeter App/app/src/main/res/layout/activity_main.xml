@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/text_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Give me your name!"/>
+
+    <Button
+        android:id="@+id/suomi_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text_editor"
+        android:text="suomeksi"/>
+    <Button
+        android:id="@+id/svenska_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/suomi_button"
+        android:text="svenska"/>
+    <Button
+        android:id="@+id/english_button"
+        android:text="english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/svenska_button"/>
+    <Button
+        android:id="@+id/surprise_button"
+        android:text="surprise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/english_button"/>
+
+    <TextView
+        android:id="@+id/greeter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Welcome!"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+</android.support.constraint.ConstraintLayout>
